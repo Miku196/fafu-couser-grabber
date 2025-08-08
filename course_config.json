@@ -1,0 +1,65 @@
+{
+  "base_url": "http://jwgl.fafu.edu.cn/(xxxxx)/default2.aspx",
+  "login_url": "http://jwgl.fafu.edu.cn/(xxxxx)/default2.aspx",
+  "select_url": "http://jwgl.fafu.edu.cn/(xxxxx)/xsxk.aspx",
+  "student_id": "",
+  "password": "",
+  "courses": [
+    {
+      "name": "课程名称示例",
+      "course_id": "课程号",
+      "priority": 1,
+      "classes": [
+        {
+          "class_id": "教学班号1",
+          "teacher": "教师姓名1",
+          "enabled": true,
+          "priority": 1,
+          "backup": false,
+          "schedule": {
+            "week": "1-16",
+            "day": "1",
+            "time": "1-2"
+          }
+        },
+        {
+          "class_id": "教学班号2",
+          "teacher": "教师姓名2",
+          "enabled": true,
+          "priority": 2,
+          "backup": true,
+          "schedule": {
+            "week": "1-16",
+            "day": "2",
+            "time": "3-4"
+          }
+        }
+      ]
+    }
+  ],
+  "settings": {
+    "max_attempts": 1000,
+    "interval": 0.5,
+    "timeout": 10,
+    "retry_delay": 1.0,
+    "enable_threading": false,
+    "thread_count": 3,
+    "validation_code_retry": 3,
+    "enable_priority": true,
+    "enable_backup_classes": true
+  },
+  "notifications": {
+    "email": {
+      "enabled": false,
+      "smtp_server": "",
+      "smtp_port": 587,
+      "sender": "",
+      "password": "",
+      "receiver": ""
+    },
+    "wechat": {
+      "enabled": false,
+      "serverchan_key": ""
+    }
+  }
+}
